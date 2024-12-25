@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ========================================================================================== */
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: geometricPrecision;
+}
+
+body {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: var(--site-minwidth);
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu,
+    "Noto Sans", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited,
+a:link {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+img {
+  vertical-align: top;
+  border-style: none;
+}
+
+/* ========================================================================================== */
+
+.html {
+  height: -webkit-fill-available;
+}
+
+.body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.wrapper {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.site-content {
+  flex: 1;
+  background-color: var(--bg-color);
+}
+
+.text {
+  font-family: "roboto", sans-serif !important;
+  font-size: 18px;
+  line-height: 18px;
+  color: black;
+}
+
+.main {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url(../images/bg.jpg);
+  background-position: right bottom;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.links .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #ffffff;
+  width: 400px;
+  padding: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.link__text {
+  width: 200px;
+}
+
+.link__icon {
+  width: 34px;
+  height: 34px;
+  margin-right: 30px;
+}
+
+@media (max-width: 600px) {
+  .main {
+    background-position: 70% bottom;
+  }
+}
+
+@media (max-width: 440px) {
+  .links .link {
+    width: 300px;
+    padding: 12px;
+  }
+
+  .link__icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+}
