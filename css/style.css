@@ -93,8 +93,8 @@ img {
 
 .text {
   font-family: "roboto", sans-serif !important;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 16px;
   color: black;
 }
 
@@ -102,8 +102,9 @@ img {
   width: 100%;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url(../images/bg.jpg);
-  background-position: right bottom;
+  background-image: url(../images/bg2.jpg);
+  background-position: center;
+  background-size: 33.3333%;
 }
 
 .links {
@@ -119,38 +120,68 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background-color: #ffffff;
-  width: 400px;
-  padding: 14px;
+  background-color: #4d4d4d;
+  color: snow;
+  width: 300px;
+  height: 50px;
+  padding: 6px 8px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .link__text {
   width: 200px;
+  color: snow;
 }
 
 .link__icon {
-  width: 34px;
-  height: 34px;
-  margin-right: 30px;
+  width: 36px;
+  height: 36px;
+  margin-right: 4px;
 }
 
-@media (max-width: 600px) {
-  .main {
-    background-position: 70% bottom;
-  }
+.link__icon img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.link__icon-telegram,
+.link__icon-profi,
+.link__icon-yandex {
+  width: 32px;
+  height: 32px;
 }
 
 @media (max-width: 440px) {
+  .text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
   .links .link {
-    width: 300px;
-    padding: 12px;
+    width: 240px;
+    height: 40px;
+  }
+
+  .link__text {
+    text-align: right;
+    padding-right: 10px;
   }
 
   .link__icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
+    width: 28px;
+    height: 28px;
+    margin-right: 0px;
+    margin-left: 16px;
+  }
+
+  .link__icon-telegram,
+  .link__icon-profi,
+  .link__icon-yandex {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
   }
 }
